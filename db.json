@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "email": "long@gmail.com",
+      "password": "$2a$10$ZnEnsTrw8O9reKFqsMzlI.4xtau7ZpNevZvNlhiMgvxsnad5N/q/6",
+      "id": 2
+    }
+  ],
+  "products": []
+}
