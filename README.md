@@ -25,5 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+emailPattern: RegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+this.form = this.fb.group({
+"email": ["", [Validators.required, Validators.pattern(this.emailPattern)]],
+"account":["", Validators.required],
+"fullName":["", Validators.required],
+"password":["", Validators.required],
+"confirmPassword":["", Validators.required]
+}, { validator: this.checkPasswords });
+checkPasswords(g: FormGroup) {
+const pass = g.controls['password'].value;
+const confirmPass = g.controls['confirmPassword'].value;
+return pass === confirmPass ? null : { notSame: true };
+}
 
 json-server -w db.json -m ./node_modules/json-server-auth
