@@ -6,10 +6,20 @@
       "password": "admin"
     },
     {
-      "email": "long@gmail.com",
-      "password": "$2a$10$ZnEnsTrw8O9reKFqsMzlI.4xtau7ZpNevZvNlhiMgvxsnad5N/q/6",
-      "id": 2
+      "email": "longlong@gmail.com",
+      "password": "$2a$10$71wKglcUSsJIfO6sVYOsG.Hfh/kxNHXts5aiYxu9ICuh87raRlq96",
+      "name": "Tasha Terrell",
+      "id": 6
     }
   ],
-  "products": []
+  "products": [
+    {
+      "name": "Melinda Patrick",
+      "image": "Rerum a anim non ver",
+      "price": 7490000,
+      "quality": 673323223,
+      "description": "Voluptatem Perssasaaspici",
+      "id": 1
+    }
+  ]
 }
